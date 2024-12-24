@@ -1,0 +1,180 @@
+/* Common code starts from here */
+*{
+    margin : 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    
+
+}
+.dot{
+    border: dotted 6px black;
+    width: 50px;
+    border-bottom: none;
+    
+
+}
+
+
+/* Common code ends from here */
+.container{
+    animation: to-top 1s ease-in;;
+}
+
+.content{
+        margin: auto;
+        margin-top: 3rem;
+        padding: 1rem;
+        display: flex;
+        width:100%;
+        height: 650px;
+        box-sizing: border-box;
+        border: 1px ;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px rgba(4, 0, 0, 0.1);
+        justify-content: center;
+      
+}
+/* logo profile start here */
+.profile{
+    width: 120px;
+    border: 1px solid rgb(150, 4, 187);
+    border-radius:50%;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+}
+.profile:hover{
+    border: 2px solid rgb(150, 4, 187);
+}
+/* topics starts here */
+.Left{
+
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid rgb(190, 183, 183);
+    background-color: #ffffff;
+
+
+}
+.menu{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding:0;
+    
+}
+.active{
+    color: rgb(150,4,187);
+    border-bottom: 1px solid rgb(150,4,187);
+    
+}
+ul li{
+    padding: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin: 40px;
+    font-size: 20px;
+    padding:0px;
+    border-bottom: 1px solid rgb(136, 133, 133);
+    
+}
+
+
+ul li a.card2:hover{
+    color: rgb(150,4,187);
+    border-bottom:2px solid rgb(150, 4, 187) ;
+}
+
+
+/* right div starts here */
+.Right{
+    width: 75%;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: to-left 1s ease-in;
+}
+    
+
+.intro{
+    color:rgb(131, 11, 161);
+    padding-top: 150px;
+
+}
+.button {
+    margin:0;
+    padding: 0 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:none;
+    background-color: rgb(150,4,187);
+    
+}
+.button a{
+    color: white;
+    text-decoration:none;
+    font-size: 1.3rem;
+}
+.button:hover{
+    border: 2px solid black;
+}
+/* social link design starts here */
+.socials{
+    display: flex;
+    margin-top: 130px;
+
+}
+    
+.socials li{ margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.socials li a{
+    text-decoration: none;
+    color: rgb(150, 4, 187);
+    border: 2px solid rgb(150, 4, 187) ;
+    border-radius: 100%;
+    padding: 2px 3px;
+    margin: 5px;
+}
+@keyframes to-top{
+    0%{
+        opacity:0%;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity:100%;
+        transform: translateY(0);
+    }
+
+}
+@keyframes to-left{
+    0%{
+        opacity:0%;
+        transform: translateX(10px) ;
+
+    }
+    100%{
+        opacity:100%;
+        transform: translateX(0px);
+    }
+}
+/*About section starts from here*/
+.myself{
+    font-size:1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bolder;
+    color:rgb(150, 4, 187);
+    padding-top: 100px;
+}
+.about-me{
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 1.1rem;
+
+}

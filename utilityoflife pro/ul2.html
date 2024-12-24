@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Utility Of Life</title>
+        <meta charset="UTF-8"><!--this is for unicode-->
+        <meta http-equiv="X-UA-compatible" content="IE=edge"><!--used for all browser ability-->
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0"><!--used for support allkind of screen-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>UL</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            .main {
+                width:100%;
+                height:100vh;
+                margin:0;
+                padding:0;
+                background-image: url(ring.jpg);
+                background-position: center;
+                background-size:cover;
+                
+                
+            }
+            .navbar{
+                height:78px;
+                width:100%;
+                float:left;
+                
+
+            }
+            .logo{
+
+                display:flex;
+                height: 70px;
+                width:auto;
+                color:white;
+                font-size: 20px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                padding-top: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                float:left;
+            }
+            .menu a{
+                width: auto;
+                display: flex;
+                height:70px;
+                margin-top:0;
+                text-align:center;
+                color:white;
+                padding: 10px 50px;
+                float:left;
+                text-decoration: none;
+            }
+            .menu a:hover {
+                color:gold;
+            }
+            .container {
+                display:inline;
+                position:relative;
+                
+                
+    
+            }
+            .content{
+                position:absolute;
+                min-width: 100px;
+                text-align: left;
+                top: 60px;
+                right: 325px;
+
+                padding: 0;
+                
+                background-color: gray;
+            }
+            .content a{
+                display:block;
+                text-decoration: none;
+                
+            }
+            
+            ul{
+                
+                justify-content: center;
+                text-align: center;
+                
+                
+            }
+            ul li {
+                list-style:none;
+                
+                
+                
+            }
+            ul li a{
+                text-decoration: none;
+                color:white;
+                
+                
+            }
+            .content a:hover{
+                color:gold;
+            }
+            .container:hover .content{
+                display:block;
+                
+            }
+            
+            .info {
+                color:white;
+                padding: 100px 0 0 30px;
+            }
+            h3{
+                color: gold;
+                font-size: 2rem;
+                
+            }
+            .form{
+                margin: 0;
+                padding:15px 30px;
+                font-size: 1.3rem;
+                line-break: 2px;
+                box-sizing: border-box;
+                background-color: rgb(244, 237, 180);
+                font-style: italic;
+                width: 500px;
+                border-radius: 8px;
+                height: 500px;
+                animation: to-top 1.5s ease-in;
+                
+            }
+            
+            .name{
+                
+                display: flex;
+                width: 400px;
+                height: 30px;
+                padding: 5px 5px;
+                font-size: 1.3rem;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            label{
+                color:rgb(0, 0, 0);
+                font-size: 1.4rem;
+            }
+            .click{
+                color:gold;
+                text-decoration: none;
+            }
+            @keyframes to-top{
+            0%{ 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="logo">
+                    <h2>Utility of Life</h2>
+                    <div class="menu">
+                        <a href="ul.html">Home</a>
+                            <div class="container">
+                                <a href="#">Contact</a>
+                                <div class="content">
+                                    <ul>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Instagram</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <a href="#">About Us</a>
+                        <a href="ul2.html"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+               
+            <div class="info">
+                <h3>Feel free to create an account</h3><br>
+                <div class="form">
+                    
+                    <label for="Fullname"> Full Name: </label><br>
+                    <input class="name" type="text" name="Fullname"  placeholder="Write your name" required><br>
+                    <label for="Fullname"> Username: </label><br>
+                    <input class="name"type="text" placeholder="username.."><br>
+                    <label for="Fullname"> Gender: </label>
+                    <input class="name"type="text" placeholder="Gender"><br>
+                    <label for="Fullname"> Phone Number: </label>
+                    <input class="name"type="number" placeholder="Phone Number" required><br>
+                    <label for="Fullname"> Mail: </label>
+                    <input class="name"type="email" placeholder="i.e, utility123@gmail.com"><br>
+                        
+                    
+                </div>
+                <br>
+                <p>Already have an account? <a class="click" href="ul3.html">Cilck Here</a></p>
+            </div>
+        </div>
+    </body>
+</html>

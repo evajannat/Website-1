@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 2rem 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Projects */
+  .projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 2rem);
+    text-align: center;
+    animation: zoomIn 1s ease-in-out;
+  }
+  
+  /* Skills */
+  .skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    margin: 0 10px;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Class-based Animation Usage */
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 1.5s ease-in-out;
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 1.5s ease-in-out;
+  }
+  
+  .zoom-in {
+    animation: zoomIn 1s ease-in-out;
+  }
+  

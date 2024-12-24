@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Business</title>
+        <meta charset="UTF-8"><!--this is for unicode-->
+        <meta http-equiv="X-UA-compatible" content="IE=edge"><!--used for all browser ability-->
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0"><!--used for support allkind of screen-->
+        <meta name="description" content="this is an ecommerce project for making online business">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="business.css">
+
+        <title>UL</title>
+    </head>
+    <body>
+        <!--Navber starts here-->
+        <i class="fa fa-bars fa-2x" id="menu-icon"></i>
+        <nav id="menu" class="hidden">
+            <ul class="nav-upper flex-space-around">
+                <li class="nav-list">
+                    <a href="business.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav-list">
+                    <a href="register.html" class="nav__link">Register</a>
+                </li>
+                <li class="nav-list">
+                    <a href="log in.html" class="nav__link">Log in</a>
+                </li>
+                <li class="nav-list">
+                    <a href="product.html" class="nav__link">Logout</a>
+                </li>
+                <li class="nav-list">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+                <li class="nav-list">
+                    <a href="profile.html" class="nav__link"><img class="profile-icon" src="Logo of utilityoflife.jpg" alt="profile icon"/></a>
+                </li>
+            </ul>
+        </nav>
+            
+        <nav>
+            
+            <ul class="nav-lower flex-space-around">
+                <li class="nav__list">
+                    <a href="" class="nav__brand nav__link">Online Business</a></li>
+            
+                <li class="nav__list">
+                    <a href="Cart.html" class="nav__link"><span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span> Cart 2 products - $124</a></li>
+            </ul>
+        </nav>
+        <!--Navber ends here-->
+        <!--header starts here-->
+        <header class="header">
+            <div class="banner flex-space-around">
+                <marquee behavior="" Direction="" class="banner-title">Sale offer on-going.</marquee>
+                <div class="features flex-space-around">
+                    <article class="feature flex-center">
+                        <i class="fa fa-truck feature__icon" aria-hidden="true"></i>
+                        <h3>Shipping Within 7 days</h3>
+                    </article>
+
+                    <article class="feature flex-center">
+                        <i class="fa fa-credit-card-alt feature__icon" aria-hidden="true" ></i>
+                        <h3>Safe Payment</h3>
+                    </article>
+
+                    <article class="feature flex-center">
+                        <i class="fa fa-comments feature__icon" aria-hidden="true"></i>
+                        <h3>Support 24/7</h3>
+                    </article>
+                </div>
+
+
+            </div>
+        </header>
+
+        <!--header ends here-->
+        <!--Main Starts From Here-->
+        <main class="flex-center">
+            <div class="sidebar">
+                <section class="categories-section">
+                    <h3 class="section-title">
+                        Categories 
+                    </h3>
+                    <ul class="list">
+                        <li class="list__item">
+                            <label for="Phone">
+                                <input type="checkbox" name="phone" id="phone" value="phone"/>
+                                Phone
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="tablets">
+                                <input type="checkbox" name="tablets" id="tablets" value="tablets"/>
+                                Tablets
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="TV">
+                                <input type="checkbox" name="TV" id="TV" value="TV"/>
+                                TV
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="Computers">
+                                <input type="checkbox" name="Computers" id="Computers" value="Computers"/>
+                                Computers
+                            </label>
+                        </li>
+                    </ul>
+
+                </section>
+                <section class="Price-section">
+                    <h3 class="section-title">
+                        Price Range 
+                    </h3>
+                    <ul class="list">
+                        <li class="list__item">
+                            <label for="Phone">
+                                <input type="radio" name="Price1" id="price1" value="[0,20]"/>
+                                $0-$20
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="Phone">
+                                <input type="radio" name="Price2" id="price1" value="[20,60]"/>
+                                $20-$60
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="Phone">
+                                <input type="radio" name="Price3" id="price1" value="[60,100]"/>
+                                $60-$100
+                            </label>
+                        </li>
+                    </ul>
+                </section>
+                <section class="Shipping-section">
+                    <h3 class="section-title">
+                        Shipping Order 
+                    </h3>
+                    <ul class="list">
+                        <li class="list__item">
+                            <label for="free">
+                                <input type="radio" name="shipping1" id="free" value="free"/>
+                                Free Shipping
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="paid">
+                                <input type="radio" name="shipping2" id="paid" value="free"/>
+                                Paid Shipping
+                            </label>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="Main-content">
+                <section class="action flex-space-around">
+                    <div class="action__sort">
+                        <label for="sort" id ="sort">Sort By:</label>
+                        <select name="sort" id="sort">
+                            <option value="sold">Most sold first</option>
+                            <option value="Rating">Most rated first</option>
+                            <option value="Price">Cheapest first</option>
+                            <option value="arriveal">Newest first</option>
+                            <option value="discount">Biggest discount first</option>
+                        </select>
+                    </div>
+                    <div class="action__search">
+                        <input type="text" place holder="Search Product">
+                        <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </section>
+                <section class="products">
+                    <article class="Product card">
+                        <div class="badge">
+                            <span>5 in stock</span>
+                            <hr class="hr-design">
+                            <span>3 has sold</span>
+                        </div>
+                        <img class="product__img" src="image/sunflower.jpg" alt="product1">
+                        <div class="product__body">
+                            <h3 class="product__name">Earrings</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product__description">
+                                this is a cute product...<a href="product.html" class="Learn-More">Learn more</a>
+                            </p>
+                            <h4 class="product__price">$425.99</h4>
+                            <p class="product__rating">Rating: 4.5/5</p>
+                            <button class="btn product__button">Add To Cart</button>
+                        </div>
+                    </article>
+                    <article class="Product card">
+                        <div class="badge">
+                            <span>5 in stock</span>
+                            <hr class="hr-design">
+                            <span>3 has sold</span>
+                        </div>
+                        <img class="product__img" src="image/rose.jpg" alt="product1">
+                        <div class="product__body">
+                            <h3 class="product__name">Earrings</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product__description">
+                                this is a cute product...<a href="product.html" class="Learn-More">Learn more</a>
+                            </p>
+                            <h4 class="product__price">$425.99</h4>
+                            <p class="product__rating">Rating: 4.5/5</p>
+                            <button class="btn product__button">Add To Cart</button>
+                        </div>
+                    </article>
+                    <article class="Product card">
+                        <div class="badge">
+                            <span>5 in stock</span>
+                            <hr class="hr-design">
+                            <span>3 has sold</span>
+                        </div>
+                        <img class="product__img" src="image/5piece.jpg" alt="product1">
+                        <div class="product__body">
+                            <h3 class="product__name">Earrings</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product__description">
+                                this is a cute product...<a href="product.html" class="Learn-More">Learn more</a>
+                            </p>
+                            <h4 class="product__price">$425.99</h4>
+                            <p class="product__rating">Rating: 4.5/5</p>
+                            <button class="btn product__button">Add To Cart</button>
+                        </div>
+                    </article>
+                    <article class="Product card">
+                        <div class="badge">
+                            <span>5 in stock</span>
+                            <hr class="hr-design">
+                            <span>3 has sold</span>
+                        </div>
+                        <img class="product__img" src="image/brooches.jpg" alt="product1">
+                        <div class="product__body">
+                            <h3 class="product__name">Earrings</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product__description">
+                                this is a cute product...<a href="product.html" class="Learn-More">Learn more</a>
+                            </p>
+                            <h4 class="product__price">$425.99</h4>
+                            <p class="product__rating">Rating: 4.5/5</p>
+                            <button class="btn product__button">Add To Cart</button>
+                        </div>
+                    </article>
+                    <article class="Product card">
+                        <div class="badge">
+                            <span>5 in stock</span>
+                            <hr class="hr-design">
+                            <span>3 has sold</span>
+                        </div>
+                        <img class="product__img" src="image/butterfly.jpg" alt="product1">
+                        <div class="product__body">
+                            <h3 class="product__name">Earrings</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product__description">
+                                this is a cute product...<a href="product.html" class="Learn-More">Learn more</a>
+                            </p>
+                            <h4 class="product__price">$425.99</h4>
+                            <p class="product__rating">Rating: 4.5/5</p>
+                            <button class="btn product__button">Add To Cart</button>
+                        </div>
+                    </article>
+                    <article class="Product card">
+                        <div class="badge">
+                            <span>5 in stock</span>
+                            <hr class="hr-design">
+                            <span>3 has sold</span>
+                        </div>
+                        <img class="product__img" src="image/chain.jpg" alt="product1">
+                        <div class="product__body">
+                            <h3 class="product__name">Earrings</h3>
+                            <p>
+                                <span class="dot green"></span>
+                                <span class="dot black"></span>
+                                <span class="dot red"></span>
+                            </p>
+                            <p class="product__description">
+                                this is a cute product...<a href="product.html" class="Learn-More">Learn more</a>
+                            </p>
+                            <h4 class="product__price">$425.99</h4>
+                            <p class="product__rating">Rating: 4.5/5</p>
+                            <button class="btn product__button">Add To Cart</button>
+                        </div>
+                    </article>
+
+                </section>
+                <div class="pagination">
+
+                    <button class="btn pagination__btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    <button Class="btn pagination__btn">2</button>
+                    <button Class="btn pagination__btn">3</button>
+                    <button Class="btn pagination__btn">4</button>
+                    <button Class="btn pagination__btn">5</button>
+                    <button Class="btn pagination__btn">6</button>
+                    <button Class="btn pagination__btn">7</button>
+                    <button Class="btn pagination__btn">8</button>
+                    <button Class="btn pagination__btn">9</button>
+                    <button Class="btn pagination__btn">10</button>
+                    <button Class="btn pagination__btn">....</button>
+                    <button Class="btn pagination__btn">50</button>
+                    <button Class="btn pagination__btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </main>
+        <!--Main Ends From Here-->
+        <!--footer starts here-->
+        <footer class="footer flex-space-around">
+            <div class="flex-space-around">
+                
+                <label for="subscribe">Subscribe to Newsletter</label>
+                <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your Email Address"/>
+                <button class="btn btn-subscribe">
+                   Subscribe 
+                </button>
+            </div>
+            <div><p>&copy; Copyright 2023 Utility Of Life. All rights reserve </p></div>
+        </footer>
+
+
+        <!--footer ends here-->
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>

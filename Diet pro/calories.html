@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"><!--this is for unicode-->
+        <meta http-equiv="X-UA-compatible" content="IE=edge"><!--used for all browser ability-->
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0"><!--used for support allkind of screen-->
+        <title>Calories</title>
+        <style>
+            *{
+                margin: 0;
+                Padding:0;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .nav-bar{
+                height:100px;
+                width:100%;
+                margin:auto;
+                align-items: center;
+                background-color: rgb(108, 210, 235);
+                
+            }
+            .nav-bar ul {
+                display:flex;
+                justify-content: space-evenly;
+            }
+            .nav-bar ul li{
+                padding: 40px ;
+                list-style: none;
+            }
+            .nav-bar ul li a .Calories{
+                background-color: brown;
+            }
+            .div-clear{
+                clear:both;
+            }
+            .diet_chart{
+                background-color: rgb(183, 240, 240);
+                padding: 30px;
+                font:100rem;
+            }
+            .grid-container{
+                display:grid;
+                justify-content: space-evenly;
+                grid-template-columns:auto auto auto auto auto auto;
+                grid-gap: 5px;
+                
+            }
+            .grid-container>div{
+                background-color: rgb(193, 242, 242);
+                border: 1px solid black; 
+                padding: 50px 100px;
+            }
+            .grid-container>div:hover {
+                background-color: aquamarine;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="bmi.html"></a>BMI</li>
+                <li><a href="healthydiet.html"></a>Healty food</li>
+                <li><a href="calories.html" class="Calories">Calories</a></li>
+                <li><a href="Recipe.html">Recipes</a></li>
+                <li><a href="#"></a>Log in</li>
+            </ul>
+        </div>
+        <div class="div-clear"></div>
+        <hr>
+        <br>
+        <div class="diet_chart" >
+            Do you know what is balance diet?<br><br>
+            <P>Lets take a look in our daily needs.</P>
+            <ul>
+                <li>Carbohydrate</li>
+                <li>Protin</li>
+                <li>Vitamin</li>
+                <li>Fat</li>
+                <li>Minarel</li>
+                <li>Water</li>
+            </ul>
+        </div>
+        <br>
+        <div class="grid-container">
+            <div>Carbs</div>
+            <div>Protin</div>
+            <div>Vitamin</div>
+            <div>Fat</div>
+            <div>Minarel</div>
+            <div>Water</div>
+        </div>
+        <div class="div-clear">
+
+        </div>
+
+        
+    </body>
+</html>

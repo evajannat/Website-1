@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chatset="UTF-8">
+        <meta name="viewpoint" content="width=device-width">
+        <title>Dropdown menu</title>
+
+        <style>
+            .all{
+                text-align: center;
+                background-color: blueviolet;
+                
+                
+            }
+            .all a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 10px;
+                display:inline;
+                font-size:1.2rem;
+                cursor:pointer;
+
+            }
+            .container{
+                display: inline;
+                position:relative;
+            }
+            .content{
+                
+                position:absolute;
+                min-width: 100px;
+                top:30px;
+                right:0px;
+                display:none;
+                text-align: left;
+                background-color: black;
+
+            }
+            .content a{
+                display: block;
+            }
+            .content a:hover{
+                background-color: gray;
+            }
+            .container:hover .content{
+                display: block;
+            }
+
+        </style>
+    <body>
+        <div class="all">
+            <a href="#">Home</a>
+            <a href="#">Tutorials</a>
+            <div class="container">
+                <a href="#">Contact</a>
+                <div class="content">
+                <a href="#">Facebook</a>
+                <a href="#">Email</a>
+                </div>
+            
+            </div>
+            <a href="#">About me</a>
+        </div>
+    </body>
+</html>        
+    

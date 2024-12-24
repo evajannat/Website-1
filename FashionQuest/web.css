@@ -1,0 +1,131 @@
+/* common and reset code starts from here */
+*{
+    margin:0;
+    padding:0;
+}
+.clear{
+    clear:both;
+}
+/* common and reset code ends from here */
+/*nav-ber starts from here*/
+.nav-ber{
+    background-color: rgb(24, 24, 153);
+    padding: 10px;
+    width: 100%;
+    height:50px;
+
+}
+.logo{
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    float:left;
+    width:25%;
+    text-align: right;
+    font-size: 1.4rem;
+}
+.search{
+    float: left;
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.src{   
+    flex: 1;
+    border:none;
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu {
+    padding:10px;
+    text-align: center;
+    
+
+}
+.menu a{
+    text-decoration: none;
+    color:rgb(197, 210, 230);
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+.menu a:hover{
+    color:white;
+    
+}
+.menu a i:hover{
+    color:white;
+}
+
+i{
+    color: rgb(133, 129, 168);
+    padding:1rem;
+    
+}
+/*nav-ber ends from here*/
+/* front page starts from here */
+.container1{
+    background-image: linear-gradient(to right, rgb(235, 223, 235), rgb(207, 146, 234)) ;
+    margin:0;
+    padding:0;
+    
+}
+.details1{
+    padding-top: 8rem;
+    padding-left: 0;
+    width:60% ;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: center;
+    
+
+}
+.moto1{
+    padding-left: 7rem;
+    color: rgb(28, 11, 25);
+
+}
+.moto2{
+    padding-left: 7rem;
+    font-size: 50px;
+}
+
+button{
+    margin-top: 2rem;
+    margin-left: 7rem;
+    height: 30px;
+    width: 150px;
+    background-color: rgb(35, 35, 173);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+}
+
+.pic1{
+    height: 470px;
+    width:500px;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    
+
+}
+
+.pic2{
+    padding: 10px;
+    float: left;
+}
+.text1{
+    padding-top: 2rem;
+    text-align: left;
+}
+
+/* front page ends from here */

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First Aid</title>
+    <meta charset="UTF-8"><!--this is for unicode-->
+    <meta http-equiv="X-UA-compatible" content="IE=edge"><!--used for all browser ability-->
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0"><!--used for support allkind of screen-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            
+        }
+        .head{
+            width:100%;
+            height: 102px;
+            background-color:azure;
+        }
+        .logo{
+
+            float: left;
+            padding: 35px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: rgb(210, 23, 23);
+            
+        }
+        .nav-ber{
+            padding:35px;
+            float:right;
+
+                
+        }
+        .nav-ber a{
+            text-decoration: none;
+            padding: 10px 60px;
+            color:black;
+            font-size: 1.1rem;
+            font-weight: 550;
+
+               
+        }
+        .nav-ber a:hover{
+            color: rgb(197, 25, 25);
+        }
+        .image{
+            
+            height:100%;
+            width:30%;
+            float: left;
+
+        }
+        .picture{
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            animation: to-top 2s ease-in;
+            
+
+        }
+        .clear{
+            clear:both;
+            border:none;
+        }
+        .form{
+            float:left;
+            padding: 30px 60px;
+            background-color: rgb(244, 221, 193);
+            width:69%;
+            height:100%;
+            box-sizing: border-box;
+            border: 3px;
+            border-radius: 10px;
+            animation: to-left 2s ease-in;
+            
+            
+        }
+        
+            
+        
+        form{
+            width: 100%;
+            height:520px;
+            border-radius: 20px;
+            padding: 30px 30px 30px 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+            float: left;
+            line-break: 2px;
+            background-position: center;
+            background-size: cover;
+            
+                    
+        }
+        label{
+                    
+            padding: 5px 0;
+            
+                    
+        }
+        .p{
+            padding: 10px 0;
+                    
+        }
+        
+        .info{
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            
+
+        }
+        .info1{
+            height:30px;
+            width:50px;
+            border-radius: 5px;
+        }
+        .info:hover{
+            cursor:pointer;
+            
+        }
+        @keyframes to-top {
+            0%{
+                opacity:0 ;
+                transform: translateY(50px);
+            }
+            100%{
+                opacity:1 ;
+                transform: translateY(0px);
+            }
+        }
+        @keyframes to-left {
+            0%{
+                opacity:0 ;
+                transform: translateX(50px);
+            }
+            100%{
+                opacity:1 ;
+                transform: translateX(0px);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            FIRST-AID
+        </div>
+        <div class="nav-ber">
+                <a href="#">Home</a>
+                <a href="#">Service</a>
+                <a href="#">Feedback</a>
+                <a href="#">About us</a>
+                <a href="#"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                
+        </div>
+    </div>
+
+    <div class="clear"></div><hr>
+
+    <div class="body">
+        <div class="image">
+            <img class="picture" src="hospic.jpg" alt="Doctor">
+        </div>
+        <div class="form">
+            <h2>Health Data</h2>
+                <form>
+                    <label for="fullname">Fullname: </label>
+                    <input class="info" type="text" placeholder="Write your full name.. " required>
+                    <label for="Number">Phone Number: </label>
+                    <input class="info" type="text" placeholder="Phone Number.. " required><br>
+            
+                    <label for="Gender">Gender: </label>
+                    <input class="info" type="radio" name="Gender" value="Male" required>Male
+                    <input class="info" type="radio" name="Gender" value="Female" required>Female<br>
+                    <label for="dob">Date of Birth: </label>
+                    <input class="info" type="date" required><br>
+                    <label for="Height">Height: </label>
+                    <input class="info" type="text" placeholder="i.e, 5 feet 2 inch.. " min="1" required>
+                    <label for="Weight">Weight: </label>
+                    <input class="info" type="number" placeholder="Write your weight.. " min="0" required><br>
+                    <p class="p">Your BMI is <input class="info1" type="text"> </p>
+                    <label for="Disease">Disease: </label>
+                    <input class="info" type="text" placeholder="Tell us your symptoms.. " required><br>
+                    <label for="Days">Days: </label>
+                    <input class="info" type="number" placeholder="How long you suffer form.. " min="0" required><br>
+                    <p class="p">Send us picture you are suffering. It will help us to identify your disease. (if possible)</p>
+                    <label for="Photo">Choose your photo: </label>
+                    <input class="info" type="file">
+                </form>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>

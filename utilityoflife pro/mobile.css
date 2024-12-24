@@ -1,0 +1,185 @@
+/* reset and common code start from here... */
+*{
+    margin:0;
+    padding:0;
+}
+/* reset and common code start from here... */
+*{
+    width:100%;
+    height:100vh;
+    margin:0;
+    padding:0;
+    background-image: url(ring.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+    
+}
+.navbar{
+    height:78px;
+    width:100%;
+    float:left;
+    opacity: 0;
+    animation: to-bottom 1s ease forwards;
+    
+
+}
+.logo{
+
+    display:flex;
+    height: 70px;
+    width:auto;
+    color:white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    float:left;
+}
+.menu a{
+    width: auto;
+    display: flex;
+    height:70px;
+    margin-top:0;
+    text-align:center;
+    color:white;
+    padding: 10px 50px;
+    float:left;
+    text-decoration: none;
+}
+.menu a:hover {
+    color:gold;
+}
+.container {
+    display:inline;
+    position:relative;
+    
+    
+
+}
+.content{
+    position:absolute;
+    min-width: 100px;
+    text-align: left;
+    top: 60px;
+    right: 325px;
+
+    padding: 0;
+    display:none;
+    background-color:goldenrod;
+    border-radius: 10px;
+}
+.content a{
+    display:block;
+    text-decoration: none;
+    
+}
+
+ul{
+    
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+ul li {
+    list-style:none;
+    
+    
+    
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    
+    
+}
+.content a:hover{
+    color:gold;
+}
+.container:hover .content{
+    display:block;
+    animation: to-bottom 1s ease;
+    
+}
+.submit{
+    max-width: 250px;
+    float: left;
+    margin-left: 50px;
+}
+.submit{
+    width:250px;
+    height:45px;
+    border-color:gold;
+    border-width: 3px;
+    border-radius: 5px;
+    margin-top: 25px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn{
+    width:75px;
+    height: 45px;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.info {
+    color:white;
+    padding: 200px 0 0 30px;
+    
+}
+h1{
+    font-size: 4rem;
+    animation: to-top 1.5s ease-in;
+    
+}
+.p{
+ padding:50px 0;
+ font-size: large;
+ line-break: 2px;
+ color:gold;
+}
+.clear{
+    clear:both;
+}
+.btn2{
+    margin: 40px 0 0 30px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.btn2:hover{
+    color:goldenrod;
+}
+@keyframes to-bottom{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+@keyframes to-top{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

@@ -1,0 +1,28 @@
+/* reset and common code */
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+}
+div{
+    padding: 1rem;
+    margin: 1rem 0;
+}
+/* reset and common code */
+
+/* card design */
+#container h2{
+    color:brown;
+}
+.title{
+    color:aqua;
+}
+
+
+/* card design */
+
+/* feedback design */
+
+/* feedback design */

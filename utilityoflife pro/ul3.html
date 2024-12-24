@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Utility Of Life</title>
+        <meta charset="UTF-8"><!--this is for unicode-->
+        <meta http-equiv="X-UA-compatible" content="IE=edge"><!--used for all browser ability-->
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0"><!--used for support allkind of screen-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>UL</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            .main {
+                width:100%;
+                height:100vh;
+                margin:0;
+                padding:0;
+                background-image: url(ring.jpg);
+                background-position: center;
+                background-size:cover;
+                
+                
+            }
+            .navbar{
+                height:78px;
+                width:100%;
+                float:left;
+                
+
+            }
+            .logo{
+
+                display:flex;
+                height: 70px;
+                width:auto;
+                color:white;
+                font-size: 20px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                padding-top: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                float:left;
+            }
+            .menu a{
+                width: auto;
+                display: flex;
+                height:70px;
+                margin-top:0;
+                text-align:center;
+                color:white;
+                padding: 10px 50px;
+                float:left;
+                text-decoration: none;
+            }
+            .menu a:hover {
+                color:gold;
+            }
+            .container {
+                display:inline;
+                position:relative;
+                
+                
+    
+            }
+            .content{
+                position:absolute;
+                min-width: 100px;
+                text-align: left;
+                top: 60px;
+                right: 325px;
+
+                padding: 0;
+                display:none;
+                background-color: gray;
+            }
+            .content a{
+                display:block;
+                text-decoration: none;
+                
+            }
+            
+            ul{
+                
+                justify-content: center;
+                text-align: center;
+                
+                
+            }
+            ul li {
+                list-style:none;
+                
+                
+                
+            }
+            ul li a{
+                text-decoration: none;
+                color:white;
+                
+                
+            }
+            .content a:hover{
+                color:gold;
+            }
+            .container:hover .content{
+                display:block;
+                
+            }
+            .submit{
+                max-width: 250px;
+                float: left;
+                margin-left: 50px;
+            }
+            .submit{
+                width:250px;
+                height:45px;
+                border-color:gold;
+                border-width: 3px;
+                border-radius: 5px;
+                margin-top: 25px;
+                color: white;
+                font-size: 1.2rem;
+                background-color: transparent;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .btn{
+                width:75px;
+                height: 45px;
+                margin-top: 25px;
+                border-radius: 5px;
+                background-color: goldenrod;
+                color: black;
+                font-size: 1.2rem;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            .info {
+                color:white;
+                padding: 150px 30px;
+            }
+            h1{
+                font-size: 4rem;
+                
+            }
+            .p{
+             padding:50px 0;
+             font-size: large;
+             line-break: 2px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="logo">
+                    <h2>Utility of Life</h2>
+                    <div class="menu">
+                        <a href="ul.html">Home</a>
+                            <div class="container">
+                                <a href="#">Contact</a>
+                                <div class="content">
+                                    <ul>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Instagram</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <a href="#">About Us</a>
+                        <a href="ul2.html">Log in</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>

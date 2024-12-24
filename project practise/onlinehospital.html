@@ -1,0 +1,252 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>First Aid</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .body{
+                max-width: 100%;
+                max-height: 100%;
+                background-image: url(background.jpg);
+                background-position:center;
+                background-size: cover;
+            }
+            .navber{
+                width: 100%;
+                height:60px;
+                padding: 20px 0px;
+                animation: to-bottom 1.2s ease-in;
+
+                
+            }
+            .logo{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 2rem;
+                color: rgb(172, 15, 15);
+                padding-left: 30px;
+                padding-top: 10px;
+                float:left;
+                
+            }
+            .menuber{
+                padding: 0;
+                float:right; 
+                  
+                 
+            }
+            
+            .menu{
+                margin: 30px;
+                justify-content: space-between;
+                text-decoration: none;
+                padding:10px 40px;
+                color:black;
+                font-size: 1.1rem;
+                box-sizing: border-box;
+                border-radius: 20px;
+                background-color: rgba(255, 255, 255, .5);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+            }
+            .menu:hover {
+                color: rgb(197, 25, 25);
+                
+            }
+            .container{
+                position: relative;
+                display: inline;
+            }
+            .content{
+                display:none;
+                width: 150px;
+                height: 150px;
+                text-align: center;
+                border-radius: 10px;
+                top: 40px;
+                right: 10px;
+                background-color: rgb(155, 190, 196);
+                position:absolute;
+            
+
+            }
+            ul li{
+                list-style: none;
+            }
+            ul li a{
+                display: block;              
+                text-align:center;                
+                margin:20px;
+                text-decoration: none;
+                padding: 10px 5px ;
+                color:black;
+                font-size: 1.1rem;
+                box-sizing: border-box;
+                border-radius: 20px;
+                background-color: rgba(255, 255, 255, .5);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            ul li a:hover{
+                color:brown;
+            }
+            .container:hover .content {
+                display:block;
+                
+            }
+            .headline{
+                margin:auto ;
+                margin-top: 10px;
+                width: 600px;
+                height: 650px;
+                border-radius: 10px;
+                padding:20px 35px 20px ;
+                background-color: rgba(255, 255, 255, .4);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                animation: to-top 1.2s ease-in;
+            }
+            h2{
+        
+                font-size: 1.4rem;
+                font-style: italic;
+                padding: 20px 0 10px 0; 
+                text-align: center;   
+            }
+            form{
+                width: 500px;
+                height:550px;
+                border-radius: 20px;
+                padding: 10px 30px;
+                font-size: 1.2rem;
+                float: left;
+                line-break: 2px;
+                background-position: center;
+                background-size: cover;    
+            }
+            label{
+                
+                padding: 5px 0;    
+            }
+            .p{
+                padding: 10px 0;
+                
+            }
+            .info{
+                padding: 10px;
+                margin: 8px 0;
+                border-radius: 5px;
+
+            }
+            .info1{
+                height:30px;
+                width:50px;
+                border-radius: 5px;
+            }
+            .clear{
+                clear: both;
+            }
+            hr{
+                
+                border-color: brown;
+                animation: to-bottom 1.2s ease-in;
+    
+            }
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+            }
+            
+            @keyframes to-top {
+            0%{
+                opacity:0 ;
+                transform: translateY(30px);
+            }
+            100%{
+                opacity:1 ;
+                transform: translateY(0px);
+            }
+            }
+            @keyframes to-bottom {
+            0%{
+                opacity:0 ;
+                transform: translateY(-50px);
+            }
+            100%{
+                opacity:1 ;
+                transform: translateX(0px);
+            }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="body">
+            
+            <div class="navber">
+                <div class="logo">
+                 FIRST-AID
+                </div>
+                <div >
+
+                <div class="menuber">   
+                <a class="menu" href="#">Home</a>
+                <a class="menu" href="#">Service</a>
+                <a class="menu" href="#">Feedback</a>
+                <a class="menu" href="#">About us</a>
+                <div class="container"><a class="menu"href="#"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#">Sign in</a></li>
+                        
+                            <li><a href="#">Sign up</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                </div>
+                </div>
+            </div>
+            <hr>
+            <div class="">
+            <div class="headline">
+                <h2>Health Data </h2>
+                <form>
+                    <label for="fullname">Fullname: </label>
+                    <input class="info" type="text" placeholder="Write your full name.. " required><br>
+                    <label for="Number">Phone Number: </label>
+                    <input class="info" type="text" placeholder="Phone number.. " required><br>
+                    
+                    <label for="Gender">Gender: </label>
+                    <input class="info" type="radio" name="Gender" value="Male" required>Male
+                    <input class="info" type="radio" name="Gender" value="Female" required>Female<br>
+                    <label for="dob">Date of Birth: </label>
+                    <input class="info" type="date" required><br>
+                    <label for="Height">Height: </label>
+                    <input class="info" type="text" placeholder="i.e, 5 feet 2 inch.. " min="1" required><br>
+                    <label for="Weight">Weight: </label>
+                    <input class="info" type="number" placeholder="Write your weight.. " min="0" required><br>
+                    <p class="p">Your BMI is <input class="info1" type="text"> </p>
+                    <label for="Disease">Disease: </label>
+                    <input class="info" type="text" placeholder="Tell us your symptoms.. " required><br>
+                    <label for="Days">Days: </label>
+                    <input class="info" type="number" placeholder="How long you suffer form.. " min="0" required><br>
+                    <p class="p">Send us picture you are suffering. It will help us to identify your disease. (if possible)</p>
+                    <label for="Photo">Choose your photo: </label>
+                    <input class="info" type="file">
+
+                    
+
+                </form>
+            </div>
+            </div>
+            
+            
+            <div>
+                
+            </div>
+        </div>
+    </body>
+ </html>

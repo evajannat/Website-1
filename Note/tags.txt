@@ -1,0 +1,47 @@
+Non sementic tags: Meaningless tag
+div, span
+
+
+
+Sementic tags: Meaningful tag
+<P>, <h1>, <form>, <table>
+<header>,<nav>,<footer>,<menu>,<table>,<section>,<process>,<figure>,<figcaption> etc. 
+
+Block element:
+h1,h2, div, 
+
+inline element:
+span, 
+
+-----------------------------------------------------------------------------------------------
+For block element:
+
+if the width area is set, it should be use margin for centering the element.
+
+------------------------------------------------------------------------------------------------
+
+BEM Methodology:
+
+Block, Element, Modify
+
+1. CSS Specificity problem.
+2. CSS class names clashes.
+3. A common rules needed.
+
+Block:
+1. Meaningful container/parent.
+2. Letters, Digits, dashes for naming block.
+3. use dash for more than on word.
+
+Element: 
+1. Not meaningful like container/parent but related to container.
+2. Letters, Digits, dashes, underscore for naming element.
+3. use dash for more than on word.
+4. syntax: block__ element.
+
+Modifier:
+1. Modify block/element (appearance, state)
+2. Letters, Digits, dashes, underscore for naming modifier.
+3. use dash for more than on word.
+4. syntax: block/element-- modifier.
+
